@@ -14,7 +14,7 @@ import {
   IconButton,
   useColorModeValue
 } from '@chakra-ui/react'
-// import { HamburgerIcon } from '@chakra-ui/icons'
+import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button.js'
 // import { IoLogoGithub } from 'react-icons/io5'
 
@@ -95,6 +95,12 @@ const Navbar = props => {
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
+              <MenuButton
+                as={IconButton}
+                icon={<HamburgerIcon />}
+                variant="outline"
+                aria-label="Options"
+              />
               <MenuList>
                 <NextLink href="/" passHref>
                   <MenuItem as={Link}>Home</MenuItem>
