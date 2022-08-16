@@ -28,60 +28,64 @@ const Page = () => {
       h="100%"
     >
       <Container>
-        <Box
-          flexShrink={0}
-          mt={{ base: 4, md: 0 }}
-          ml={{ md: 6 }}
-          textAlign="center"
-          marginBottom={4}
-          pt={5}
-        >
+        <Section delay={0.1}>
           <Box
-            borderColor="blue.500"
-            borderWidth={2}
-            borderStyle="solid"
-            w="100px"
-            h="100px"
-            display="inline-block"
-            borderRadius="full"
-            overflow="hidden"
+            flexShrink={0}
+            mt={{ base: 4, md: 0 }}
+            ml={{ md: 6 }}
+            textAlign="center"
+            marginBottom={-4}
+            pt={5}
           >
-            <ProfileImage
-              src="/images/kamalraj.jpeg"
-              alt="Profile image"
+            <Box
+              borderColor="blue.500"
+              borderWidth={2}
+              borderStyle="solid"
+              w="100px"
+              h="100px"
+              display="inline-block"
               borderRadius="full"
-              width="100%"
-              height="100%"
-            />
+              overflow="hidden"
+            >
+              <ProfileImage
+                src="/images/kamalraj.jpeg"
+                alt="Profile image"
+                borderRadius="full"
+                width="100%"
+                height="100%"
+              />
+            </Box>
           </Box>
-        </Box>
-
-        <Box
-          borderRadius="xl"
-          p={3}
-          mb={3}
-          align="center"
-          bg={useColorModeValue('whiteAlpha.600', 'whiteAlpha.200')}
-          css={{ backdropFilter: 'blur(10px)' }}
-        >
-          Hello, I&apos;m a full-stack developer and a UI/UX designer
-        </Box>
-
-        <Box
-          display={{ md: 'flex' }}
-          p={3}
-          borderRadius="xl"
-          mb={3}
-          bg={useColorModeValue('whiteAlpha.600', 'whiteAlpha.200')}
-          css={{ backdropFilter: 'blur(10px)' }}
-        >
-          <Box flexGrow={1}>
-            <Heading as="h2" variant="page-title">
-              Kamal Raj
-            </Heading>
-            <p>Creative Person (Full-stack developer / Designer / Artist)</p>
+        </Section>
+        <Section delay={0.1}>
+          <Box
+            borderRadius="xl"
+            p={3}
+            mb={-4}
+            align="center"
+            bg={useColorModeValue('whiteAlpha.600', 'whiteAlpha.200')}
+            css={{ backdropFilter: 'blur(10px)' }}
+          >
+            Hello, I&apos;m a full-stack developer and a UI/UX designer
           </Box>
-        </Box>
+        </Section>
+        <Section delay={0.1}>
+          <Box
+            display={{ md: 'flex' }}
+            p={3}
+            borderRadius="xl"
+            mb={-4}
+            bg={useColorModeValue('whiteAlpha.600', 'whiteAlpha.200')}
+            css={{ backdropFilter: 'blur(10px)' }}
+          >
+            <Box flexGrow={1}>
+              <Heading as="h2" variant="page-title">
+                Kamal Raj
+              </Heading>
+              <p>Creative Person (Full-stack developer / Designer / Artist)</p>
+            </Box>
+          </Box>
+        </Section>
         <Section delay={0.1}>
           <Box
             borderRadius="xl"

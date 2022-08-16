@@ -11,6 +11,7 @@ import { WorkGridItem } from '../components/grid-item.js'
 import thumbBlueBeatz from '../public/images/bluebeatz.png'
 import thumbBioLink from '../public/images/kamalraj.jpeg'
 import Layout from '../components/layouts/article.js'
+// import Section from '../components/section.js'
 
 const Portfolio = () => {
   const date = new Date()
